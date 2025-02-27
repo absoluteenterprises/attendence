@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ABSOLUTE ENTERPRISE</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="cyber-card w-full max-w-md p-8 rounded-lg border-2 border-neon-blue">
+            <h2 class="text-3xl font-orbitron text-center mb-8 glow-text">Access Portal</h2>
+            
+            <form id="loginForm" class="space-y-6">
+                <div class="form-group">
+                    <label class="cyber-label" for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" 
+                           class="cyber-input w-full" required
+                           pattern="[0-9]{10}">
+                </div>
+                
+                <div class="form-group">
+                    <label class="cyber-label" for="password">Password</label>
+                    <input type="password" id="password" name="password" 
+                           class="cyber-input w-full" required>
+                </div>
+                
+                <div class="flex justify-between items-center">
+                    <label class="cyber-checkbox">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="text-neon-blue hover-effect">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="cyber-button w-full">
+                    Initialize Login
+                </button>
+            </form>
+            
+            <p class="mt-6 text-center">
+                New Agent? 
+                <a href="/register.html" class="text-neon-blue hover-effect">Register Here</a>
+            </p>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
